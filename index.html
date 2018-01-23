@@ -1,146 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Matt's Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Matthew Cranford | Developer & Creator</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link rel="icon" href="http://example.com/favicon.png">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>     
   </head>
-
   <body>
-    
-    <!-- NAV --> 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between"> 
-      <!-- brand -->
-      <a class="navbar-brand" id="nav-name" href="#">Matthew Cranford</a>
-      <!-- nav Toggler -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- toggle Items -->
-      <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-        <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link one" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link two" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link three" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav> <!-- NAV END -->
-    
-    
-    <!-- ABOUT -->
-    <div class="jumbotron mt-3 mb-0 anchor" id="about">
-      <div class="container">
-        <div class="row">
-          
-          <!-- bio -->
-          <div class="col-sm-12 col-md-6 mt-5" id="bio-text" align="center">
-            <p>
-              Current student in freeCodeCamp and full-time learner of everything programming. I hope to one day use my knowledge and skills to create something that will change the world.
-            </p>
-            <hr class="my-3" id="bio-hr">
-            <p>
-              Future Full-Stack Developer
-            </p>
-          </div>
-          
-          <!-- profile pic -->
-          <div class="col-sm-12 col-md-4 mt-3" id="bio-image" align="center">
-            <img class="img-fluid rounded-circle" id="profile-image" src="https://drive.google.com/uc?id=1WeCRPjC6UIU8XncPigyTF8uK1K60msD1" alt="Profile picture of myself">
-          </div>
-          
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-between"> 
+        <a class="navbar-brand" id="nav-name" href="#">Matthew Cranford</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+          <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link one" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link two" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link three" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </div>
-    </div> <!-- ABOUT END -->
-    
-    
-    <!-- CARD -->
-    <div class="container card bg-light" id="card-div">
-    
-      
-      <!-- PORTFOLIO -->
-      <div class="container anchor projects" id="portfolio">
-        <h1 class="text-center">Portfolio</h1>
-        <hr class="my-4">
-        
-        <!-- projects -->
+      </nav>
+    </header>
+    <main>
+      <div class="jumbotron mt-3 mb-0 anchor" id="about">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 col-md-12 text-center my-4">
-              <p data-height="510" data-theme-id="0" data-slug-hash="dZxOOr" data-default-tab="result" data-user="MatthewCranford" data-embed-version="2" data-pen-title="Tribute Page" class="codepen">See the Pen <a href="https://codepen.io/MatthewCranford/pen/dZxOOr/">Tribute Page</a> by Matt (<a href="https://codepen.io/MatthewCranford">@MatthewCranford</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-              <a href="https://codepen.io/MatthewCranford/full/dZxOOr/" target="_blank"><h4 class="pt-3">Tribute Page Project</h4></a>
-    <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>      
-            </div> 
+            
+            <!-- bio -->
+            <div class="col-sm-12 col-md-6 mt-5" id="about-text" align="center">
+              <p>
+                Current student in freeCodeCamp and full-time learner of everything programming. My goal is to one day use my knowledge and skills to create something that will change the world.
+              </p>
+              <hr class="my-3" id="about-hr">
+              <p>
+                Future Full-Stack Developer
+              </p>
+            </div>
+            
+            <!-- profile pic -->
+            <div id="about-image-container" class="col-sm-12 col-md-4 mt-3" align="center">
+              <img class="" id="about-image" src="https://drive.google.com/uc?id=1WeCRPjC6UIU8XncPigyTF8uK1K60msD1" alt="Profile picture">
+            </div>
+            
           </div>
-          <hr class="my-5" id="portfolio-end-hr"> 
         </div>
-        
-      </div> <!-- PORTFOLIO END -->
-    
+      </div> <!-- ABOUT END -->
       
-      <!-- CONTACT -->
-      <div class="container anchor mb-5" id="contact">
-        <h1 class="text-center">Contact Me</h1>
-        <hr class="my-4"> 
-        <div class="row">
-    
-          <!-- form -->
-          <div class="col-sm-12 col-md-6"> 
-            <form>
-              <div class="form-group mt-5 ">
-                <input type="text" class="form-control" id="inputName" aria-describedby="emailHelp" placeholder="Name"> 
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="inputEmail" placeholder="Email Address">
-              </div>
-              <div class="form-group">
-                <input type="number" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" id="inputTextarea" rows="3" placeholder="Message"></textarea>
-              </div>
-              <div  class="text-center">
-                <button class="btn btn-primary" id="contact-button"  type="submit">Send</button>
-              </div>
-            </form>  
-          </div>
-    
-          <!-- text  -->
-          <div class="col-sm-12 col-md-6 mt-5 text-center" id="contact-text">
+      
+      <!-- CARD -->
+      <div id="card" class="container card bg-light" >
+      
+                        
+        <!-- PROJECTS -->
+        <div class="container anchor projects" id="portfolio">
+          <h1 class="text-center">Peronal Projects</h1>
+          <hr class="my-4">
+          
+          <!-- projects -->
+          <div id="projects" class="container">
             <div class="row">
-              <div class="col-md-12 text-center">
-                <p>
-                  Want to get in touch with me? If you would like more information about myself or my experience, just send me a message. I'm always interested in new opportunities and projects.
-                </p> 
-              </div>   
-              <div class="col-sm-12 col-md-12 pt-3 text-center">
-                <p>
-                  I promise to reply A.S.A.P.
-                </p>
+              <!-- project 1 -->
+              <div class="col-sm-12 col-lg-6 text-center my-4 project">
+                <p data-height="400" data-theme-id="0" data-slug-hash="dJpxGR" data-default-tab="result" data-user="MatthewCranford" data-embed-version="2" data-pen-title="Random Quote Machine" class="codepen">See the Pen <a href="https://codepen.io/MatthewCranford/pen/dJpxGR/">Random Quote Machine</a> by Matt (<a href="https://codepen.io/MatthewCranford">@MatthewCranford</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+                <a class="project-link" href="https://codepen.io/MatthewCranford/full/dJpxGR/" target="_blank"><h4 class="project-title">Random Quote Machine</h4></a>
+
+              </div> 
+              <!-- project 2 -->
+              <div class="col-sm-12 col-lg-6 text-center my-4 project">
+                <p data-height="400" data-theme-id="0" data-slug-hash="dZxOOr" data-default-tab="result" data-user="MatthewCranford" data-embed-version="2" data-pen-title="Tribute Page" class="codepen">See the Pen <a href="https://codepen.io/MatthewCranford/pen/dZxOOr/">Tribute Page</a> by Matt (<a href="https://codepen.io/MatthewCranford">@MatthewCranford</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+
+                <a class="project-link" href="https://codepen.io/MatthewCranford/full/dZxOOr/" target="_blank"><h4 class="project-title">Tribute Page</h4></a>
+
+              </div> 
+            </div>
+            <hr class="my-5" id="portfolio-end-hr"> 
+          </div>
+        </div> <!-- PROJECTS END -->
+      
+        
+        <!-- CONTACT -->
+        <div class="container anchor mb-5" id="contact">
+          <h1 class="text-center">Contact Me</h1>
+          <hr class="my-4"> 
+          <div class="row">
+      
+      
+            <!-- text  -->
+            <div class="col-sm-12 col-md-12 mt-5 text-center" id="contact-text">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <p>
+                    Want to get in touch with me? If you would like more information about myself or my experience, just send me a message. I'm always interested in new opportunities and projects.
+                  </p> 
+                </div>
               </div>
             </div>
           </div>
-    
-        </div>
-      </div> <!-- CONTACT END -->
-    
-      
-    </div> <!-- CARD END -->
-    
+        </div> 
+      </div>
+    </main>
     
     <!-- FOOTER TOP -->
     <nav class="navbar navbar-expand- navbar-dark bg-secondary text-center  pt-5 pb-5"  id="footer-top" >
@@ -150,6 +123,9 @@
         <!-- social media links -->
         <ul class="nav justify-content-center">
           <li class="nav-item">
+            <a class="nav-link" id="github" href="https://github.com/MatthewCranford" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" id="linkedin" href="https://www.linkedin.com/in/matthew-cranford-0809a6140/" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a> 
           </li>
           <li class="nav-item">
@@ -158,9 +134,7 @@
           <li class="nav-item">
             <a class="nav-link" id="twitter" href="https://twitter.com/MattCranford" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a> 
           </li>
-          <li class="nav-item">
-            <a class="nav-link" id="github" href="https://github.com/MatthewCranford" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
-          </li>
+          
         </ul>
         
       </div>
@@ -169,8 +143,8 @@
     
     <!-- FOOTER BOTTOM -->
     <nav class="navbar navbar-expand- bg-dark navbar-dark justify-content-center text-white">
-      <span id="copyright" class="" >
-        Matthew Cranford © 2017. All Rights Reversed
+      <span id="copyright">
+        Coded by Matthew Cranford © 2017.
       </span>
     </nav> <!-- FOOTER BOTTOM END -->
     

@@ -1,8 +1,11 @@
-/* base */
+/* ================= 
+  ELEMENT STYLES 
+====================*/
 body {
   background: grey;
   font-family: 'Roboto', sans-serif;
 }
+
 
 nav ul li a {
   color: white;
@@ -12,15 +15,18 @@ nav ul li a {
 hr {
   width: 60%;
   border-width: 8px;
-  border-color: grey;
+  border-color: grey; 
 }
 
-/* classes */
+/* ================= 
+  CLASS STYLES 
+====================*/
 
 .anchor { 
   padding-top: 60px;
   margin-top: 60px; 
 }
+
 
 .nav-pills .nav-link.active {
   background-color: lightgrey;
@@ -31,24 +37,59 @@ hr {
   color: black;
 }
 
+.project-link:hover {
+  
+  text-decoration: none;
+}
+
+.project-title {
+  margin-top: 1rem;
+  color: #363131;
+}
+
+  .project-title:hover {
+    filter: brightness(200%);
+  }
+
+  .project-title:active {
+    filter: brightness(300%);
+  }
+
+
 .form-control:focus {
   border-color: black;
   box-shadow: 0px 0px 3px 3px #888;
 }
 
-/* ids */
+/* ================= 
+  ID STYLES 
+====================*/
 
-#profile-image {
-  max-width: 150px;
+#nav-name {
+  font-size: 1.5em;
+}
+
+#about-image {
+  border-radius: 100%;
+  max-width: 100px;
+}
+
+#card {
+  width: 90%;
+}
+
+
+#about-hr {
+  border-color: silver;
+}
+
+#projects {
+  width: 100%;
 }
 
 #portfolio-end-hr {
   border-width: 5px;
   width: 100%;
-  border-color: silver;
-}
-
-#bio-hr {
   border-color: silver;
 }
 
@@ -64,6 +105,10 @@ hr {
   
 }
 
+#github:hover {
+  color: #333;
+}
+
 #linkedin:hover {
   color: #0077B5;
 }
@@ -76,47 +121,56 @@ hr {
   color: #00aced;
 }
 
-#github:hover {
-  color: #333;
+
+/* ================= 
+  MEDIA QUERIES 
+====================*/
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
 }
 
-#nav-name {
-  font-size: 1.5em;
-}
-
-/* Media Queries */
-
-@media (min-width: 768px) {
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
   
-  /* classes */
-  
-  .projects {
-    width: 75%;
-  }
-  
-  /* ids */
-  
-  #bio-text {
+  #about-text {
     text-align: end;
-    margin-left: 5em;
-    
+    margin-left: 5em; 
   }
   
-  #bio-hr {
+  #about-hr {
     margin-right: 0;
     width: 75%;
     border-width: 5px;
   }
   
-  #bio-image {
+  #about-image {
     text-align: center;
   }
-  
-  #contact-button {
-    float: left;
+
+  #projects {
+    width: 70%;
   }
+  
   
   #contact-text {
+    text-align: center;
     padding-top: 2em;
   }
+
 }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+  #projects {
+    width: 80%;
+  }
+ 
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+} 
